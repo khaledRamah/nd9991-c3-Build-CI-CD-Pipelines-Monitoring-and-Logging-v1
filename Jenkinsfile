@@ -8,7 +8,7 @@ pipeline {
                mkdir -p ~/.aws
                echo "[default]" >~/.aws/credentials
                echo "[default]" >~/.boto
-               echo "aws_access_key_id = ${accessKeyVariable}" >>~/.boto
+               echo "aws_access_key_id = ${class}" >>~/.boto
         """
         }
       }
